@@ -1,4 +1,3 @@
-# APSC200
-Apsc 200
-team 10
-oil spill
+APSC 200
+Team 10
+Oil Spill
