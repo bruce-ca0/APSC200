@@ -14,6 +14,17 @@ A:  n by n adjacency matrix
           if A(i,j) = 0, then agent-i receives NO signal from agent-j
 %}
 
+% Initialize the all-zero matrix and number of agents
+    n = size(xy, 1);
+    A = zeros(n,n);
 
-
+    for i = 1:n
+        for j = 1:n
+            % Euclidain Distance 
+            distance = sqrt((xy(i,1) - xy(j,1))^2 + (xy(i,2) - xy(j,2))^2);
+            if distance < rc
+                A(i, j) = 1; 
+            end
+        end
+    end
 end
